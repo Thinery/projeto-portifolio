@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/*definindo a cor do background e as fontes usadas na pagina*/
+body{
+    background-color: #F2E3D5;
+    margin: 0px;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+}
+/*fazendo a imagem ficar centralizada na tela*/
+img {
+    display: block;
+    margin: 0 auto;
+}
+/*estilização do cabeçalho*/
+header{ 
+    background-image: linear-gradient(#3CA6A6,#026773, #024959);
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding-top: 10px;
+}
+/* Estilo do título principal no cabeçalho */
+header h1{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+    font-weight: normal;
+    font-size: 3em;
+}
+/* Estilo do parágrafo no cabeçalho */
+header p {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+/* Estilo da barra de navegação no cabeçalho */
+header > nav {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.411);
+}
+/* Estilo dos links na navegação */
+header > nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+}
+header > nav > a:hover {
+    background-color: #00ffff;
+    color: #02414f;
+}
+
+/* Estilização do conteúdo principal */
+main {
+    min-width: 320px;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border: 0px 10px 10px 10px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+}
+/* Estilo dos títulos nas seções do conteúdo principal */
+main h2{
+    background-image: linear-gradient(to right, #9dfbce, transparent);
+    text-indent: 30px;
+    border-radius: 2px;
+    text-align: center;
+}
+/* Estilo dos parágrafos no conteúdo principal */
+main p{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+}
+/* Estilo dos links no conteúdo principal */
+main a{
+    color:#802922;
+    text-decoration: none;
+}
+main a:hover {
+    background-color: #25b3ff;
+    padding: 5px 5px; 
+}
+/* Estilo do rodapé */
+footer {
+    background-color:#024959;
+}
+footer > p { 
+    text-align: center; 
+    color: white;
+}
+/* Estilo da seção "Currículo" */
+.Curriculo {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+/*Todo esse código abaixo diz respeito a estilização da parte "entre em contato comigo"*/
+.Contato {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.Contato h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .Contato {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .Contato h2 {
+        font-size: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

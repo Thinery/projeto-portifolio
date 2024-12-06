@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Thiago Nery</title>
+
+</head>
+
+<body>
+    <!-- Cabeçalho da página com apresentação pessoal e navegação -->
+    <header>
+        <h1>Olá<br>Meu nome é Thiago.</h1>
+        <p>E serei futuramente um desenvolvedor Back End</p>
+        <!-- Navegação principal com links para as seções da página -->
+        <nav>
+            <a href="#Sobre">Sobre</a>
+            <a href="#Curriculo">Currículo</a>
+            <a href="#Portifolio">Portifólio</a>
+            <a href="#Contato">Contato</a>
+        </nav>
+    </header>
+    
+    <main class="Conteudo">
+
+         <!-- Seção "Sobre" com informações pessoais -->
+        <section class="Sobre" id="Sobre">
+            <h2>Um pouco sobre mim</h2>
+            <!-- Imagem de perfil responsiva -->
+            <picture>
+              <source media="(max-width: 600px) " srcset="images/imagem_perfil-pq.jpg">
+              <img class="resp" src="images/imagem_perfil.jpg" alt="foto de perfil">
+          </picture>
+           <!-- Texto sobre interesses e formação acadêmica -->
+            <p>Sou apaixonado por leitura, animais, jogos e tecnologia.</p>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas, estudando bastante para ter base sólida em lógica de programação e tenho um grande interesse por tecnologia e inovação. Estou aberto a novos desafios que me permitam crescer como desenvolvedor e contribuir para projetos que façam a diferença.</p>
+        </section>
+
+        <!-- Seção "Currículo" com detalhes de formação e experiências -->
+        <section class="Curriculo" id="Curriculo">
+            <h2>Currículo</h2>
+            <p>
+                FORMAÇÃO<br>
+                • Ensino médio completo<br>
+                • Desenho técnico mecânico – Senai MG<br>
+                • Análise e desenvolvimento de sistemas - UNINTER - em andamento<br>
+                QUALIFICAÇÕES<br>
+                • Pacote office básico.<br>
+                • HTML5 e CSS3<br>
+                • Java e OO, UML, JDBC, JavaFX, Spring Boot, JPA, Hibernate, MySQL, MongoDB.<br>
+                • Desenho técnico mecânico - Senai Poços de Caldas - Conclusão em 2018. Carga horária 730 horas.<br>
+                EXPERIÊNCIA PROFISSIONAL<br>
+                2018 — Lorenzetti louças Itda. aprendiz (senai).
+                Principais atividades: Interpretação e desenvolvimento de desenho técnico, metrologia, desenvolvimento
+                de projetos em CAD 2D e 3D. <br>
+                2023 — Face Produções Auxiliar de escritório. (ATUALMENTE TRABALHANDO NESTA EMPRESA)
+                Principais atividades: Tratamento de fotografia com Photoshop e adobe Lightroom, lançamento de boletos e
+                serviços de escritório em geral.
+            </p>
+        </section>
+        <!-- Seção "Portfólio" para projetos futuros-->
+        <section class="Portifolio" id="Portifolio">
+            <h2>Portifólio</h2>
+            <p>No momento, ainda não tenho um portfólio pronto para apresentação. Porém, estou trabalhando em projetos pessoais e acadêmicos utilizando java como alguns mods para minecraft, cruds e jogos 2d mas ainda não acho que sejam dignos de serem apresentados como projetos completos. Ficarei feliz em compartilhar esses projetos assim que estiverem concluídos. Caso por algum motivo tenha tido interesse, esse é meu github, se houver alguma atualização sobre esses projetos e eu nao tiver atualizado por aqui, você pode dar uma olhada <!-- Link para o GitHub --> <a href="https://github.com/Thinery" target="_blank">por aqui</a>.</p>
+        </section>
+         <!-- Seção "Contato" com formulário -->
+        <section class="Contato" id="Contato">
+          <h2>Contato</h2>
+          <form action="#" method="post" class="contact-form">
+              <!-- Campo para nome -->
+              <div class="form-group">
+                  <label for="name">Nome:</label>
+                  <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Seu nome"
+                      required
+                  />
+              </div>
+              <!-- Campo para e-mail -->
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Seu email"
+                      required
+                  />
+              </div>
+              <!-- Campo para mensagem -->
+              <div class="form-group">
+                  <label for="message">Mensagem:</label>
+                  <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Sua mensagem"
+                      required
+                  ></textarea>
+              </div>
+              <!-- Botão de envio -->
+              <button type="submit" class="submit-button">Enviar</button>
+          </form>
+      </section>
+          
+    </main>
+    <!-- Rodapé com crédito -->
+    <footer><p>Esse projeto foi um trabalho designado para a universidade Uninter.</p></footer>
+</body>
+
+</html>
